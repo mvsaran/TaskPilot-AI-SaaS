@@ -1,0 +1,38 @@
+{
+  "name": "taskpilot-ai",
+  "version": "1.0.0",
+  "description": "Production-Grade AI-powered Project Management SaaS & QA System Under Test (SUT)",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspaces --if-present",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "test": "npm run test --workspaces --if-present",
+    "test:backend": "npm run test --workspace=backend",
+    "test:frontend": "npm run test --workspace=frontend",
+    "seed": "npm run seed --workspace=backend",
+    "seed:db": "npm run seed --workspace=backend",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f"
+  },
+  "keywords": [
+    "ai",
+    "project-management",
+    "saas",
+    "nestjs",
+    "react",
+    "prisma",
+    "qa",
+    "sut"
+  ],
+  "author": "Antigravity AI Engineering Team",
+  "license": "MIT"
+}
